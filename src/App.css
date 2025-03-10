@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
+@import url('https://fonts.google.com/share?selection.family=Shafarik');
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #000000, #413d3d, #6d7179);
+  }
+  
+  .avatar {
+    width: 130px; /* Размер аватарки */
+    height: 130px; /* Размер аватарки */
+    border-radius: 50%; /* Округлая форма */
+    box-shadow: 3px 6px 8px rgba(233, 4, 4, 0.8); /* Серый обвод */
+    margin-right: 20px; /* Отступ между аватаркой и текстом */
+  }
+
+
+  :root {
+    /* Base font size */
+    font-size: 10px;   
+    
+    /* Set neon color */
+    --neon-text-color: #f40;
+    --neon-border-color: #08f;
+  }
+
+
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 150px; /* Узкое меню */
+    height: 550px;
+    background-color: #2d3131;
+    padding: 20px 0;
+    border-radius: 100px 15px 100px 10px;
+    display: flex;
+    font-family: Impact;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    border: 5px solid #333;
+  }
+  
+  .menu-container {
+    width: 100%;
+    margin: 15px 0;
+  }
+  
+  .sidebar-link {
+    display: flex;
+    flex-direction: column; /* Размещаем иконку сверху, а текст снизу */
+    align-items: center;
+    font-size: 18px;
+    color: #d61313;
+    cursor: pointer;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 8px;
+    width: 90%;
+    text-decoration: none;
+  }
+
+  
+  .sidebar-item:hover {
+    color: #f8b90d; /* Яркий цвет для эффекта на наведение */
+    padding: 5px;
+  }
+  
+  .sidebar-icon {
+    font-size: 40px;
+    margin-bottom: 10px; /* Добавляем немного отступа между иконкой и текстом */
+  }
+  
+  .sidebar-item span {
+    font-size: 16px; /* Уменьшаем размер текста для лучшего сочетания с иконкой */
+    color: #ffffff;
+  }
+  
+  .sidebar-item:hover .sidebar-icon {
+    font-size: 45px; /* Увеличиваем иконку при наведении */
+  }
+  
+  .profile {
+    width: 800px;
+    height: 550px;
+    border: 5px solid #333;
+    text-align: center;
+    max-width: 1000px;
+    background-color: #2d3131;
+    padding: 20px;
+    border-radius: 100px 15px 100px 10px;
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    margin-left: 20px;
+    
+  }
+  
+  .profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .profile-info h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #064172;
+  }
+  
+  .profile-info p {
+    font-size: 18px;
+    color: #aaa;
+  }
+  
+  /* Стили для контейнеров About и Projects */
+  .info-container {
+    width: 750px;
+    height: 150px;
+    background-color: #333;
+    padding: 20px;
+    background: rgb(39, 42, 43);
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+
+  .info-container-resume {
+    width: 750px;
+    height: 370px;
+    background-color: #333;
+    padding: 20px;
+    background: rgb(39, 42, 43);
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    border-radius: 20px;
+    margin: 20px 0;
+  }
+
+  .info-container-projects {
+    width: 750px;
+    height: 350px;
+    background-color: #333;
+    padding: 20px;
+    background: rgb(39, 42, 43);
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    border-radius: 20px;
+    margin: auto;
+  }
+
+  .projects-container {
+    width: 150px;
+    height: 100px;
+    background-color: #333;
+    padding: 20px;
+    background: rgb(39, 42, 43);
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    border-radius: 20px;
+    margin: 20px 0;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .projects-container1 {
+    width: 150px;
+    height: 100px;
+    background-color: #333;
+    padding: 20px;
+    background: rgb(39, 42, 43);
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    border-radius: 20px;
+    margin: 20px 0;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .projects-container2 {
+    width: 150px;
+    height: 100px;
+    background-color: #333;
+    padding: 20px;
+    background: rgb(39, 42, 43);
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    border-radius: 20px;
+    margin: 20px 0;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .projects-container3 {
+    width: 150px;
+    height: 100px;
+    background-color: #333;
+    padding: 20px;
+    background: rgb(39, 42, 43);
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    border-radius: 20px;
+    margin: 20px 0;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .projects-container4 {
+    width: 150px;
+    height: 100px;
+    background-color: #333;
+    padding: 20px;
+    background: rgb(39, 42, 43);
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    border-radius: 20px;
+    margin: 20px 0;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .projects-container5 {
+    width: 150px;
+    height: 100px;
+    background-color: #333;
+    padding: 20px;
+    background: rgb(39, 42, 43);
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    border-radius: 20px;
+    margin: 20px 0;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .contact1 {
+    width: 230px;
+    height: 20px;
+    background-color: #333;
+    padding: 20px;
+    background: rgb(39, 42, 43);
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    border-radius: 20px;
+    margin: 20px 0;
+    text-decoration: none;
+    margin-right: 15px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 0px;
+  }
+  
+  .contact2 {
+    width: 230px;
+    height: 20px;
+    background-color: #333;
+    padding: 20px;
+    background: rgb(39, 42, 43);
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    border-radius: 20px;
+    margin: 20px 0;
+    margin-right: 15px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 0px;
+    text-decoration: none;
+  }
+
+  .contact3 {
+    width: 230px;
+    height: 20px;
+    background-color: #333;
+    padding: 20px;
+    background: rgb(39, 42, 43);
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    border-radius: 20px;
+    margin: 20px 0;
+    margin-right: 15px;
+    text-align: left;
+    vertical-align: middle;
+    text-decoration: none;
+    line-height: 0px;
+  }
+
+  .contact4 {
+    width: 230px;
+    height: 20px;
+    background-color: #333;
+    padding: 20px;
+    background: rgb(39, 42, 43);
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    border-radius: 20px;
+    margin: 20px 0;
+    text-align: left;
+    vertical-align: middle;
+    text-decoration: none;
+    line-height: 0px; 
+    margin-right: 15px;
+  }
+
+  .blog-post {
+    width: 750px;
+    height: 425px;
+    background-color: #333;
+    padding: 20px;
+    background: rgb(39, 42, 43);
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    border-radius: 20px;
+    margin: auto;
+  }
+
+  .contact-container {
+    width: 750px;
+    height: 350px;
+    background-color: #333;
+    padding: 20px;
+    background: rgb(39, 42, 43);
+    box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+    border-radius: 20px;
+    margin: auto;
+  }
+  
+  .blog-post h2 {
+    font-size: 18px;
+    color: #929191;
+    font-family: Verdana;
+  }
+  .contact-container h2 {
+    font-size: 18px;
+    color: #e6e6e6;
+    font-family: Impact;
+  }
+  .info-container h2 {
+    font-size: 22px;
+    color: #ffffff;
+    font-family: Impact;
+  }
+  .info-container-projects h2 {
+    font-size: 22px;
+    color: #ffffff;
+    font-family: Impact;
+  }
+  
+  
+  .info-container p {
+    color: #ccc;
+    font-size: 16px;
+  }
+
+  .info-container-resume p {
+    color: #ccc;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .info-container-projects p {
+    color: #ccc;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .blog-post p {
+    color: #ccc;
+    font-size: 13px;
+    text-align: justify;
+  }
+
+  
+  .shelf {
+	margin: -30px auto 10px;
+	padding: 0;
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid #d61313;
+	box-shadow: 0 20px 20px -20px #43b5eb;
+	width: 95%;
+}
+.box h3 {
+  margin: 0,5;
+  font-size: 2rem;
+}
+  
+    h3 {
+        width: 350px;
+        height: 30px;
+        font-size: 40px;
+        color: #ffffff;
+        font-family: Verdana;
+        font-style: normal;
+        padding: 0.1em 0.3em;
+        border-radius: 0.2em;
+        position: relative;
+        background: rgb(39, 42, 43);
+        box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+        transform: skewX(-10deg);
+        display: inline-block;
+      }
+
+      .fio {
+        width: 550px;
+        height: 30px;
+        font-size: 40px;
+        color: #ffffff;
+        font-family: Verdana;
+        font-style: normal;
+        padding: 0.1em 0.3em;
+        border-radius: 0.2em;
+        position: relative;
+        background: rgb(39, 42, 43);
+        box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+        transform: skewX(-10deg);
+        display: inline-block;
+      }
+
+
+  h3:hover {
+    animation: glitch .3s linear infinite;
+    cursor: pointer;
+  }
+  @keyframes glitch {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+  /* Стили для кнопки НАЖМИ */
+  @keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.but {
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(233, 4, 4, 0.8);
+  border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+    animation: heartbeat 1s infinite;
+}
+  
+.proj {
+  font-size: 20px;
+  font-weight: bold;
+  color: red; /* Красный цвет текста */
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.8), 0 0 10px rgba(255, 0, 0, 0.6); /* Слабое красное свечение */
+  animation: glow 2s infinite alternate; /* Анимация свечения */
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px rgba(255, 0, 0, 0.8), 0 0 10px rgba(255, 0, 0, 0.6);
+            }
+            to {
+                text-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6);
+            }
+        }
+
+
+        /* Мобильная адаптация */
+@media (max-width: 768px) {
+  body {
+    background-size: 200% 200%; /* Уменьшаем размер фона для мобильных устройств */
+  }
+
+  
+  .app-container {
+    flex-direction: column; /* Переходим на вертикальную ориентацию */
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .sidebar {
+    width: 100%; /* Сайдбар занимает всю ширину */
+    padding: 10px;
+    height: auto;
+    font-size: 14px;
+  }
+
+  .sidebar-link {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Стилизация иконок для мобильных */
+  .sidebar-icon {
+    font-size: 30px;
+  }
+
+  .sidebar-item:hover .sidebar-icon {
+    font-size: 35px; /* Увеличиваем иконку при наведении */
+  }
+
+  .profile {
+    width: 100%; /* Профиль занимает всю ширину */
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .profile-image img {
+    width: 40px; /* Уменьшаем размер аватарки */
+    height: 40px;
+  }
+
+  .info-container,
+  .info-container-resume,
+  .info-container-projects,
+  .blog-post,
+  .contact-container {
+    width: 100%;
+    height: auto;
+    margin: 6px 0;
+    padding: 6px;
+  }
+
+  .projects-container,
+  .projects-container1,
+  .projects-container2,
+  .projects-container3,
+  .projects-container4,
+  .projects-container5 {
+    width: 100%;
+    height: auto;
+    margin: 6px 0;
+    padding: 6px;
+    float: none; /* Убираем float, чтобы элементы располагались вертикально */
+  }
+
+  .contact1,
+  .contact2,
+  .contact3,
+  .contact4 {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  h3 {
+    font-size: 20px; /* Уменьшаем размер заголовков */
+  }
+
+  .but {
+    font-size: 1.2rem; /* Уменьшаем размер кнопки */
+  }
+
+  .proj {
+    font-size: 18px; /* Уменьшаем размер шрифта для проекта */
+  }
+}
+
+/* Адаптация для экранов меньше 480px (смартфоны) */
+@media (max-width: 480px) {
+  body {
+    background-size: 100% 100%; /* Еще меньше фона для очень маленьких экранов */
+  }
+
+  .sidebar {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .sidebar-link {
+    font-size: 10px;
+  }
+
+  .profile {
+    padding: 8px;
+  }
+
+  .profile-info h1 {
+    font-size: 13px;
+  }
+
+  .profile-info p {
+    font-size: 10px;
+  }
+
+  .info-container,
+  .info-container-resume,
+  .info-container-projects,
+  .blog-post,
+  .contact-container {
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0;
+  }
+
+  .projects-container,
+  .projects-container1,
+  .projects-container2,
+  .projects-container3,
+  .projects-container4,
+  .projects-container5 {
+    width: 100%;
+    padding: 6px;
+    margin: 6px 0;
+  }
+
+  .contact1,
+  .contact2,
+  .contact3,
+  .contact4 {
+    width: 100%;
+    padding: 6px;
+    margin-right: 0;
+  }
+
+  .but {
+    font-size: 1.2rem; /* Уменьшаем кнопку еще сильнее */
+  }
+
+  .proj {
+    font-size: 9px; /* Уменьшаем размер текста еще сильнее */
+  }
+}
+
+/* Стили для кнопки меню на мобильных устройствах */
+.menu-toggle {
+  display: none; /* Скрыто на больших экранах */
+  font-size: 15px;
+  cursor: pointer;
+  padding: 6px;
+  text-align: center;
+  background-color: #2d3131;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  /* Показываем кнопку меню */
+  .menu-toggle {
+    display: block;
+    position: relative;
+    z-index: 1000;
+  }
+
+  /* Скрываем меню по умолчанию */
+  .menu-container {
+    display: none;
+    flex-direction: row;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: #2d3131;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  /* Когда меню открыто */
+  .menu-container.open {
+    display: flex;
+    transform: scaleX(1);
+  }
+
+  /* Основной контент */
+  .content {
+    transition: padding-top 0.3s ease-in-out;
+  }
+
+  /* Сдвигаем контент вниз */
+  .menu-open .content {
+    padding-top: 80px; /* Меняй значение под нужную высоту меню */
+  }
+
+  .sidebar-link {
+    font-size: 12px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .sidebar-item {
+    text-align: center;
+  }
+
+  /* Стилизация иконок */
+  .sidebar-icon {
+    font-size: 14px;
+  }
+
+  .sidebar-item:hover .sidebar-icon {
+    font-size: 16px;
+  }
+  hr {
+    display: none;
+  }
+}
+
+
+
